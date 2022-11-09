@@ -39,7 +39,7 @@ fetch('https://restcountries.com/v3.1/name/'+id)
         
             fdetail.map((detail)=>(
                 <div className='flag-detail-main'>
-                    <img src={detail["flags"]["png"]} alt="Not displayable"  />
+                    <img src={detail["flags"]["png"]} className="img-main" alt="Not displayable"  />
                     <p>{detail["name"]["official"]}</p>
                     <p>{"Native name: "+ detail["name"]["nativeName"]}</p>
                     <p>{"population: "+ detail["population"]}</p>

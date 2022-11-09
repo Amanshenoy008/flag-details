@@ -49,7 +49,7 @@ function Home() {
     }
 
   return (
-    <div> 
+    <div className='home'> 
         
         <div className="filter">
             <input placeholder="Search for a country..."  className='inp'/>
