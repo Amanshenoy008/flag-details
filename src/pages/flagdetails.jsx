@@ -47,7 +47,7 @@ fetch('https://restcountries.com/v3.1/name/'+id)
                     <p>{"Sub Region: "+ detail["subregion"]}</p>
                     <p>{"Capital: "+ detail["capital"]}</p>
                     <p>{"Top level domain: "+detail["tld"]}</p>
-                    <p>{"Currencies: "}</p>
+                    <p>{"Currencies: "+detail["currencies"]}</p>
                     <p>{"Languages: "+detail["languages"]}</p>
                     
                 </div>
