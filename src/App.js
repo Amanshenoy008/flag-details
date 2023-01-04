@@ -3,7 +3,7 @@ import Navbar from './components/navbar';
 import Home from './pages/home'
 import Flagd from './pages/flagdetails'
 import Error from './pages/error'
-
+  
 function App() {
   return (
     <BrowserRouter>
