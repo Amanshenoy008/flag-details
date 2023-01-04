@@ -99,7 +99,7 @@
 }
 
 .cont1> *{
-    border: 1px solid red;
+    
     width:140px;
     position: relative;
     cursor: pointer;
