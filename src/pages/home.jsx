@@ -8,8 +8,14 @@ function Home() {
     const [error , seterror] = useState(null)
     const [loading , setloading ] = useState(true)
     const [flag, setflag] = useState("")
+    const [ivalue , setivalue] =useState()
 
     const [url,seturl] = useState('https://restcountries.com/v3.1/all')
+
+    const search = ()=>{
+        seturl('https://restcountries.com/v3.1/name/'+ivalue)
+
+    }
 
     useEffect(()=>{
         fetch(url)
@@ -27,6 +33,8 @@ function Home() {
         
         })
     },[url])
+
+
 
     const africa =()=>{
         seturl('https://restcountries.com/v3.1/region/africa')
@@ -52,8 +60,8 @@ function Home() {
     <div className='home'> 
         
         <div className="filter">
-            <input placeholder="Search for a country..."  className='inp'/>
-
+            <input placeholder="Search for a country..." onChange={(e)=>{setivalue(e.target.value)} } className='inp'/>
+            <button onClick={search}> Search</button>
             <div className="cont1">
 
                 <div className="f1" onClick={f}> Filter by region</div>
