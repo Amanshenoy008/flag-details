@@ -27,11 +27,11 @@ fetch('https://restcountries.com/v3.1/name/'+id)
 
 
   return (
-    <div>
+    <div className='fg-main'>
 
         <div className='back-button'>
             <Link to={'/'} >
-                <button className='btn1'> <BsArrowLeft />Back</button>
+                <button className='btn1'> <BsArrowLeft className='al' />Back</button>
                 </Link>
         </div>
         { error && <div> {error}</div>}

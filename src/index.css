@@ -134,11 +134,10 @@
 }
 
 .btn1{
-    border:1px solid red;
     width:120px;
     height:30px;
-    background-color: hsl(0, 0%, 98%);
-    
+    background-color:hsl(209, 23%, 22%) ;
+    color:aliceblue;
 
 }
 
@@ -154,3 +153,12 @@
     
 }
 
+.al{
+    margin-right:9px;
+}
+
+.fg-main{
+    background-color: hsl(209, 23%, 22%);
+    height: 100vh;
+    overflow: hidden;
+}
