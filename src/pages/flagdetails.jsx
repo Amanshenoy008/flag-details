@@ -1,5 +1,6 @@
 import {useState , useEffect} from 'react'
 import { Link , useParams} from 'react-router-dom'
+import {BsArrowLeft} from 'react-icons/bs'
 
 function Flagdetails() {
 
@@ -30,7 +31,7 @@ fetch('https://restcountries.com/v3.1/name/'+id)
 
         <div className='back-button'>
             <Link to={'/'} >
-                <button className='btn1'>Back</button>
+                <button className='btn1'> <BsArrowLeft />Back</button>
                 </Link>
         </div>
         { error && <div> {error}</div>}
