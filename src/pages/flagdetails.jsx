@@ -40,17 +40,23 @@ fetch('https://restcountries.com/v3.1/name/'+id)
         
             fdetail.map((detail)=>(
                 <div className='flag-detail-main'>
+                    
                     <img src={detail["flags"]["png"]} className="img-main" alt="Not displayable"  />
+                    <div className="lol">
+                    <div className="lol1">
                     <p>{detail["name"]["official"]}</p>
                     <p>{"Native name: "+ detail["name"]["nativeName"]}</p>
                     <p>{"population: "+ detail["population"]}</p>
                     <p>{"Region: "+ detail["region"]}</p>
                     <p>{"Sub Region: "+ detail["subregion"]}</p>
                     <p>{"Capital: "+ detail["capital"]}</p>
+                    </div>
+                    <div className="lol2">
                     <p>{"Top level domain: "+detail["tld"]}</p>
                     <p>{"Currencies: "+detail["currencies"]}</p>
                     <p>{"Languages: "+detail["languages"]}</p>
-                    
+                   </div>
+                    </div>
                 </div>
             ))
         
